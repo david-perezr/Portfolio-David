@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>David Pérez Ramírez | Sistemas, redes y ciberseguridad</title>
+  <meta name="description" content="Portfolio de David Pérez Ramírez, estudiante de 2º de ASIR en Málaga: Windows Server, Active Directory, redes, Docker, VirtualBox y hardware, con foco en infraestructura segura.">
+  <meta name="author" content="David Pérez Ramírez">
+
+  <meta name="theme-color" content="#070b12">
+  <meta name="color-scheme" content="dark">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="David Pérez Ramírez | Sistemas, redes y ciberseguridad">
+  <meta property="og:description" content="Infraestructura segura, de la BIOS al contenedor. Windows Server, Active Directory, redes, Docker y hardware de alto rendimiento.">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23012456'/%3E%3Cpath d='M8 10l7 6-7 6' fill='none' stroke='%23eeedf0' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M17 23h8' stroke='%233ee58f' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+
+      <a class="brand" href="#inicio">
+        <span class="brand__prompt" aria-hidden="true">PS&gt;</span> David
+      </a>
+
+      <nav class="nav" aria-label="Secciones de la página">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#sobre-mi">Sobre mí</a></li>
+          <li><a class="nav__link" href="#formacion">Formación</a></li>
+          <li><a class="nav__link" href="#skills">Skills</a></li>
+          <li><a class="nav__link" href="#proyectos">Proyectos</a></li>
+          <li><a class="nav__link" href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main id="contenido">
+
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+
+        <h1 class="hero__title" id="hero-title">
+          <span class="hero__name">Soy David.</span>
+          Construyo infraestructura segura,
+          <span class="hero__clause">de la BIOS al contenedor.</span>
+        </h1>
+
+        <div>
+          <p class="hero__lead">
+           Especialista en Sistemas y Ciberseguridad. Despliego infraestructuras de red, administro servidores corporativos y garantizo el rendimiento del hardware. Asegurar la infraestructura no es el último paso de mis proyectos, es la base desde la que construyo todo lo demás.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="https://www.linkedin.com/in/david-p%C3%A9rez-ram%C3%ADrez-4a8994210/" target="_blank" rel="noopener noreferrer">
+              Contactar en LinkedIn<span class="visually-hidden"> (se abre en una pestaña nueva)</span>
+            </a>
+            <a class="btn btn--ghost" href="CV-David.pdf" download>
+              Descargar CV<span class="visually-hidden"> (PDF, 123 KB)</span>
+            </a>
+            <a class="btn btn--ghost" href="https://github.com/david-perezr" target="_blank" rel="noopener noreferrer">
+              Ver mi GitHub<span class="visually-hidden"> (se abre en una pestaña nueva)</span>
+            </a>
+          </div>
+
+          <p class="status">
+            <span class="status__dot" aria-hidden="true"></span>
+            Disponible para practicas profesionales y oportunidades laborales · Málaga o remoto
+          </p>
+        </div>
+
+        <figure>
+          <div class="console">
+            <div class="console__bar">
+              <span class="console__title">Administrador: Windows PowerShell</span>
+              <span class="console__controls" aria-hidden="true">
+                <span class="console__ctrl console__ctrl--min"></span>
+                <span class="console__ctrl console__ctrl--max"></span>
+                <span class="console__ctrl console__ctrl--close"></span>
+              </span>
+            </div>
+
+            <div class="console__body">
+              <p class="console__line">
+                PS C:\&gt;
+                <code><span class="console__cmd">Get-ADUser</span> david <span class="console__dim">-Properties</span> * <span class="console__dim">|</span> <span class="console__cmd">fl</span> Name, Title, Department, City, Enabled</code>
+              </p>
+
+              <dl class="console__output">
+                <dt>Name</dt>
+                <dd>David Pérez Ramírez</dd>
+                <dt>Title</dt>
+                <dd>Estudiante de 2º de ASIR</dd>
+                <dt>Department</dt>
+                <dd>Sistemas, Redes y Ciberseguridad</dd>
+                <dt>City</dt>
+                <dd>Málaga</dd>
+                <dt>Enabled</dt>
+                <dd class="console__ok">True</dd>
+              </dl>
+
+              <p class="console__line">
+                PS C:\&gt;
+                <span class="console__cursor" aria-hidden="true"></span>
+              </p>
+            </div>
+          </div>
+
+          <figcaption class="hero__caption">
+            Mi perfil, consultado como un usuario de Active Directory.
+          </figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+
+    <section class="section" id="sobre-mi" aria-labelledby="about-title">
+      <div class="container">
+
+        <header class="section__header">
+          <h2 class="section__title" id="about-title">Sobre mí</h2>
+        </header>
+
+        <div class="about">
+          <div class="about__text">
+            <p>
+              Estudio 2º de Administración de Sistemas Informáticos en Red
+              (ASIR) y me interesa la infraestructura completa, no una sola capa:
+              qué hace el hardware por debajo del sistema operativo, cómo viaja
+              un paquete por la red y por qué un usuario del dominio puede
+              abrir una carpeta y otro no.
+            </p>
+            <p>
+              Transformo la teoría en práctica en mi propio entorno de laboratorio.
+              Diseño y configuro infraestructuras bajo estándares de producción, 
+              aplicando siempre un enfoque priorizando la seguridad.
+            </p>
+          </div>
+
+          <dl class="about__focus">
+            <div class="about__item">
+              <dt class="about__term">Administración de sistemas</dt>
+              <dd class="about__desc">
+                Disfruto dejando un dominio ordenado: usuarios, grupos, permisos
+                y directivas que se entienden de un vistazo y que otro
+                administrador puede heredar sin sorpresas.
+              </dd>
+            </div>
+            <div class="about__item">
+              <dt class="about__term">Hardware de alto rendimiento</dt>
+              <dd class="about__desc">
+                Monto equipos y los afino desde la BIOS, ajustando memoria y
+                latencias hasta encontrar el punto en que rinden al máximo y
+                siguen siendo estables.
+              </dd>
+            </div>
+            <div class="about__item">
+              <dt class="about__term">Ciberseguridad</dt>
+              <dd class="about__desc">
+                La aplico como criterio de diseño: mínimo privilegio, redes
+                segmentadas y servicios que solo exponen lo imprescindible.
+              </dd>
+            </div>
+          </dl>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="section" id="formacion" aria-labelledby="education-title">
+      <div class="container">
+
+        <header class="section__header">
+          <h2 class="section__title" id="education-title">Formación</h2>
+        </header>
+
+        <ul class="education">
+          <li class="education__item">
+            <h3 class="education__title">Máster en Ciberseguridad</h3>
+            <p class="education__meta">Prometeo by ThePower · En curso</p>
+          </li>
+          <li class="education__item">
+            <h3 class="education__title">CFGS en Administración de Sistemas Informáticos en Red (ASIR)</h3>
+            <p class="education__meta">Prometeo by ThePower · Cursando 2º</p>
+          </li>
+          <li class="education__item">
+            <h3 class="education__title">Bachillerato</h3>
+            <p class="education__meta">Completado</p>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+
+        <header class="section__header">
+          <h2 class="section__title" id="skills-title">Skills</h2>
+          <p class="section__intro">
+            Las tecnologías con las que trabajo en mis laboratorios y
+            proyectos, agrupadas por área.
+          </p>
+        </header>
+
+        <section class="skill-group">
+          <div>
+            <h3 class="skill-group__title">Sistemas</h3>
+            <p class="skill-group__desc">Servidores Windows y Linux, y servicios de directorio</p>
+          </div>
+          <ul class="skill-list">
+            <li>
+              <span class="skill__name">Windows Server</span>
+              <span class="skill__detail">Instalación, roles y características</span>
+            </li>
+            <li>
+              <span class="skill__name">Active Directory</span>
+              <span class="skill__detail">Dominios, usuarios, grupos y unidades organizativas</span>
+            </li>
+            <li>
+              <span class="skill__name">Directivas de grupo</span>
+              <span class="skill__detail">Configuración y restricciones centralizadas con GPO</span>
+            </li>
+            <li>
+              <span class="skill__name">Permisos NTFS</span>
+              <span class="skill__detail">Recursos compartidos con mínimo privilegio</span>
+            </li>
+            <li>
+              <span class="skill__name">Linux</span>
+              <span class="skill__detail">Debian y Ubuntu Server: instalación y administración</span>
+            </li>
+            <li>
+              <span class="skill__name">SSH y Bash</span>
+              <span class="skill__detail">Administración remota de servidores por línea de comandos</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="skill-group">
+          <div>
+            <h3 class="skill-group__title">Scripting y automatización</h3>
+            <p class="skill-group__desc">Tareas administrativas convertidas en scripts</p>
+          </div>
+          <ul class="skill-list">
+            <li>
+              <span class="skill__name">PowerShell</span>
+              <span class="skill__detail">Automatización de tareas administrativas en Windows Server</span>
+            </li>
+            <li>
+              <span class="skill__name">Bash</span>
+              <span class="skill__detail">Scripts para administrar servidores Linux</span>
+            </li>
+            <li>
+              <span class="skill__name">Python</span>
+              <span class="skill__detail">Scripts para automatizar tareas repetitivas</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="skill-group">
+          <div>
+            <h3 class="skill-group__title">Redes</h3>
+            <p class="skill-group__desc">Diseño, servicios y diagnóstico</p>
+          </div>
+          <ul class="skill-list">
+            <li>
+              <span class="skill__name">Direccionamiento IP</span>
+              <span class="skill__detail">Subnetting y planificación de rangos</span>
+            </li>
+            <li>
+              <span class="skill__name">DNS y DHCP</span>
+              <span class="skill__detail">Resolución de nombres y asignación de direcciones</span>
+            </li>
+            <li>
+              <span class="skill__name">Segmentación</span>
+              <span class="skill__detail">Redes separadas por función y nivel de confianza</span>
+            </li>
+            <li>
+              <span class="skill__name">Diagnóstico</span>
+              <span class="skill__detail">Localización de fallos de conectividad capa por capa</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="skill-group">
+          <div>
+            <h3 class="skill-group__title">Contenedores y virtualización</h3>
+            <p class="skill-group__desc">Entornos aislados y reproducibles</p>
+          </div>
+          <ul class="skill-list">
+            <li>
+              <span class="skill__name">Docker</span>
+              <span class="skill__detail">Imágenes, contenedores, volúmenes y redes</span>
+            </li>
+            <li>
+              <span class="skill__name">Docker Compose</span>
+              <span class="skill__detail">Servicios definidos como código</span>
+            </li>
+            <li>
+              <span class="skill__name">VirtualBox</span>
+              <span class="skill__detail">Máquinas virtuales, redes internas e instantáneas</span>
+            </li>
+            <li>
+              <span class="skill__name">Laboratorios</span>
+              <span class="skill__detail">Escenarios de varias máquinas para probar antes de desplegar</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="skill-group">
+          <div>
+            <h3 class="skill-group__title">Hardware y tuning</h3>
+            <p class="skill-group__desc">Del montaje al ajuste fino</p>
+          </div>
+          <ul class="skill-list">
+            <li>
+              <span class="skill__name">Ensamblaje</span>
+              <span class="skill__detail">Montaje completo de equipos</span>
+            </li>
+            <li>
+              <span class="skill__name">BIOS/UEFI</span>
+              <span class="skill__detail">Configuración avanzada del firmware</span>
+            </li>
+            <li>
+              <span class="skill__name">Memoria y latencias</span>
+              <span class="skill__detail">Perfiles y ajuste manual de timings</span>
+            </li>
+            <li>
+              <span class="skill__name">Estabilidad</span>
+              <span class="skill__detail">Pruebas de estrés y control de temperaturas</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="skill-group">
+          <div>
+            <h3 class="skill-group__title">Programación y bases de datos</h3>
+            <p class="skill-group__desc">Del script a la consulta</p>
+          </div>
+          <ul class="skill-list">
+            <li>
+              <span class="skill__name">Python</span>
+              <span class="skill__detail">Funciones, POO y control de errores</span>
+            </li>
+            <li>
+              <span class="skill__name">JavaScript</span>
+              <span class="skill__detail">ES6, DOM y peticiones asíncronas</span>
+            </li>
+            <li>
+              <span class="skill__name">SQL</span>
+              <span class="skill__detail">Consultas, uniones y agregaciones</span>
+            </li>
+            <li>
+              <span class="skill__name">MongoDB</span>
+              <span class="skill__detail">Base de datos NoSQL orientada a documentos</span>
+            </li>
+          </ul>
+        </section>
+
+      </div>
+    </section>
+
+
+    <section class="section" id="proyectos" aria-labelledby="projects-title">
+      <div class="container">
+
+        <header class="section__header">
+          <h2 class="section__title" id="projects-title">Proyectos</h2>
+          <p class="section__intro">
+            Entornos de infraestructura que sigo ampliando, y
+            los repositorios con los que practico y afianzo mis conocimientos.
+          </p>
+        </header>
+
+        <div class="projects">
+
+          <article class="project">
+            <header class="project__header">
+              <h3 class="project__title">Home server con Docker sobre Linux</h3>
+              <p class="project__status"><span class="project__status-dot" aria-hidden="true"></span>En curso</p>
+              <p class="project__cmd">
+                <span class="project__prompt" aria-hidden="true">$</span>
+                <code>docker compose up -d</code>
+              </p>
+            </header>
+            <div class="project__body">
+              <p class="project__summary">
+                Un servidor doméstico planteado como el de una pequeña empresa:
+                cada servicio aislado en su contenedor, definido como código y
+                listo para reconstruirse desde cero.
+              </p>
+              <ul class="project__tasks">
+                <li class="project__task">Máquina virtual Debian en VirtualBox, creada con un script y aislada de la red de casa.</li>
+                <li class="project__task">Proxy inverso (Caddy) como único punto de acceso, con HTTPS y el mínimo de puertos publicados.</li>
+                <li class="project__task">Una red de Docker por servicio, para que cada uno solo alcance lo que necesita.</li>
+                <li class="project__task">Volúmenes persistentes que mantienen los datos al margen del ciclo de vida de los contenedores.</li>
+              </ul>
+              <ul class="tags project__tags" aria-label="Tecnologías">
+                <li class="tag">Docker</li>
+                <li class="tag">Docker Compose</li>
+                <li class="tag">Caddy</li>
+                <li class="tag">Debian</li>
+                <li class="tag">VirtualBox</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project">
+            <header class="project__header">
+              <h3 class="project__title">Laboratorio de Active Directory en VirtualBox</h3>
+              <p class="project__status"><span class="project__status-dot" aria-hidden="true"></span>En curso</p>
+              <p class="project__cmd">
+                <span class="project__prompt" aria-hidden="true">PS&gt;</span>
+                <code>Install-ADDSForest</code>
+              </p>
+            </header>
+            <div class="project__body">
+              <p class="project__summary">
+                Una red de empresa en miniatura, virtualizada por completo,
+                para administrar un dominio de Windows Server sin miedo a
+                romper nada.
+              </p>
+              <ul class="project__tasks">
+                <li class="project__task">Controlador de dominio sobre Windows Server con los roles de AD DS y DNS.</li>
+                <li class="project__task">Unidades organizativas, usuarios y grupos estructurados según el principio de mínimo privilegio.</li>
+                <li class="project__task">Directivas de grupo para aplicar configuración y restricciones a los equipos cliente.</li>
+                <li class="project__task">Red interna aislada e instantáneas para probar cambios y revertirlos en segundos.</li>
+              </ul>
+              <ul class="tags project__tags" aria-label="Tecnologías">
+                <li class="tag">Active Directory</li>
+                <li class="tag">DNS</li>
+                <li class="tag">GPO</li>
+                <li class="tag">Windows Server</li>
+                <li class="tag">VirtualBox</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project">
+            <header class="project__header">
+              <h3 class="project__title">Ensamblaje y tuning de hardware de alto rendimiento</h3>
+              <p class="project__cmd">
+                <code lang="en">Press DEL to enter SETUP</code>
+              </p>
+            </header>
+            <div class="project__body">
+              <p class="project__summary">
+                Montaje completo de un equipo y ajuste fino desde la BIOS para
+                exprimir el rendimiento que el hardware permite sin renunciar a
+                la estabilidad.
+              </p>
+              <ul class="project__tasks">
+                <li class="project__task">Ensamblaje del equipo componente a componente.</li>
+                <li class="project__task">Configuración avanzada de BIOS/UEFI y activación de perfiles de memoria.</li>
+                <li class="project__task">Ajuste manual de latencias, paso a paso y validando cada cambio.</li>
+                <li class="project__task">Pruebas de estrés y control de temperaturas para confirmar la estabilidad.</li>
+              </ul>
+              <ul class="tags project__tags" aria-label="Tecnologías">
+                <li class="tag">BIOS/UEFI</li>
+                <li class="tag">Memoria RAM</li>
+                <li class="tag">Latencias</li>
+                <li class="tag">Pruebas de estrés</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project">
+            <header class="project__header">
+              <h3 class="project__title">Ejercicios de JavaScript: del lenguaje al DOM</h3>
+              <p class="project__cmd">
+                <span class="project__prompt" aria-hidden="true">$</span>
+                <code>node ejercicio-01.js</code>
+              </p>
+            </header>
+            <div class="project__body">
+              <p class="project__summary">
+                56 ejercicios resueltos que recorren JavaScript desde las
+                variables hasta las peticiones a una API.
+              </p>
+              <ul class="project__tasks">
+                <li class="project__task">42 ejercicios de fundamentos: variables, bucles, funciones, arrays y objetos.</li>
+                <li class="project__task">5 ejercicios de DOM: seleccionar y crear elementos y responder a eventos.</li>
+                <li class="project__task">Sintaxis ES6: desestructuración, spread y los métodos map, filter y reduce.</li>
+                <li class="project__task">Peticiones con fetch y async/await; por ejemplo, un Pokémon aleatorio desde la PokeAPI.</li>
+              </ul>
+              <ul class="tags project__tags" aria-label="Tecnologías">
+                <li class="tag">JavaScript</li>
+                <li class="tag">ES6</li>
+                <li class="tag">DOM</li>
+                <li class="tag">Fetch API</li>
+              </ul>
+              <a class="project__link" href="https://github.com/david-perezr/Proyecto-2-JS" target="_blank" rel="noopener noreferrer">
+                Ver el código<span class="visually-hidden"> de los ejercicios de JavaScript</span> en GitHub<span class="visually-hidden"> (se abre en una pestaña nueva)</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="project">
+            <header class="project__header">
+              <h3 class="project__title">Katas de Python en Jupyter</h3>
+              <p class="project__cmd">
+                <span class="project__prompt" aria-hidden="true">&gt;&gt;&gt;</span>
+                <code>son_anagramas("Roma", "amor")</code>
+              </p>
+            </header>
+            <div class="project__body">
+              <p class="project__summary">
+                40 retos cortos resueltos en notebooks de Jupyter, cada uno con
+                su enunciado y su solución.
+              </p>
+              <ul class="project__tasks">
+                <li class="project__task">Funciones con diccionarios, tuplas y comprensiones de listas.</li>
+                <li class="project__task">Funciones lambda y filter() para transformar y filtrar datos.</li>
+                <li class="project__task">Excepciones personalizadas para controlar los errores.</li>
+                <li class="project__task">Programación orientada a objetos: un usuario de banco que ingresa, retira y transfiere dinero.</li>
+              </ul>
+              <ul class="tags project__tags" aria-label="Tecnologías">
+                <li class="tag">Python</li>
+                <li class="tag">Jupyter</li>
+                <li class="tag">POO</li>
+              </ul>
+              <a class="project__link" href="https://github.com/david-perezr/Proyecto-3-Pyhton" target="_blank" rel="noopener noreferrer">
+                Ver el código<span class="visually-hidden"> de las katas de Python</span> en GitHub<span class="visually-hidden"> (se abre en una pestaña nueva)</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="project">
+            <header class="project__header">
+              <h3 class="project__title">Consultas SQL sobre la base de datos de una aerolínea</h3>
+              <p class="project__cmd">
+                <span class="project__prompt" aria-hidden="true">SQL&gt;</span>
+                <code>SELECT * FROM flights;</code>
+              </p>
+            </header>
+            <div class="project__body">
+              <p class="project__summary">
+                Consultas sobre los vuelos, reservas, billetes, aviones y
+                aeropuertos de una aerolínea, del filtro más sencillo a las
+                agregaciones.
+              </p>
+              <ul class="project__tasks">
+                <li class="project__task">Filtros con WHERE y búsqueda de patrones con LIKE.</li>
+                <li class="project__task">Agregaciones con COUNT, GROUP BY y HAVING, como las ciudades con más de un aeropuerto.</li>
+                <li class="project__task">Uniones con JOIN para contar los vuelos de cada modelo de avión.</li>
+                <li class="project__task">Comparación de fechas para detectar vuelos con más de una hora de retraso.</li>
+              </ul>
+              <ul class="tags project__tags" aria-label="Tecnologías">
+                <li class="tag">SQL</li>
+                <li class="tag">JOIN</li>
+                <li class="tag">GROUP BY</li>
+              </ul>
+              <a class="project__link" href="https://github.com/david-perezr/Proyecto-4-SQL" target="_blank" rel="noopener noreferrer">
+                Ver el código<span class="visually-hidden"> de las consultas SQL</span> en GitHub<span class="visually-hidden"> (se abre en una pestaña nueva)</span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="footer" id="contacto" aria-labelledby="contact-title">
+    <div class="container footer__inner">
+
+      <div>
+        <h2 class="section__title" id="contact-title">Contacto</h2>
+        <p class="footer__lead">
+          Busco prácticas o un primer puesto junior en sistemas, redes o
+          ciberseguridad. Si en tu equipo hay servidores que mantener, redes
+          que ordenar o sistemas que proteger, me gustaría conocerlo.
+        </p>
+      </div>
+
+      <address>
+        <ul class="contact-list">
+          <li class="contact-list__item">
+            <span class="contact-list__label">Ubicación</span>
+            <span class="contact-list__value">Málaga · Disponible en remoto</span>
+          </li>
+          <li class="contact-list__item">
+            <span class="contact-list__label">Email</span>
+            <a class="contact-list__link" href="mailto:perezramirezdavid4@gmail.com">perezramirezdavid4@gmail.com</a>
+          </li>
+          <li class="contact-list__item">
+            <span class="contact-list__label">LinkedIn</span>
+            <a class="contact-list__link" href="https://www.linkedin.com/in/david-p%C3%A9rez-ram%C3%ADrez-4a8994210/" target="_blank" rel="noopener noreferrer">
+              linkedin.com/in/david-pérez-ramírez-4a8994210<span class="visually-hidden"> (se abre en una pestaña nueva)</span>
+            </a>
+          </li>
+          <li class="contact-list__item">
+            <span class="contact-list__label">GitHub</span>
+            <a class="contact-list__link" href="https://github.com/david-perezr" target="_blank" rel="noopener noreferrer">
+              github.com/david-perezr<span class="visually-hidden"> (se abre en una pestaña nueva)</span>
+            </a>
+          </li>
+        </ul>
+      </address>
+
+    </div>
+
+    <div class="container footer__bottom">
+      <p>&copy; 2026 David Pérez Ramírez. Todos los derechos reservados.</p>
+      <a class="footer__top" href="#inicio">Volver arriba</a>
+    </div>
+  </footer>
+
+</body>
+</html>
